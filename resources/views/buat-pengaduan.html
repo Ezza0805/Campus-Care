@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Pengaduan | KampusCare</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER / TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><i class="fa-solid fa-building-columns"></i></span>
+        <div>
+          <strong>KampusCare <small>RESMI</small></strong>
+          <em>Sistem Keluhan Universitas Terpadu</em>
+        </div>
+      </a>
+      
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="../../index.html">Beranda</a>
+        <a class="active" href="buat-pengaduan.html">Buat Pengaduan</a>
+        <a href="riwayat-pengaduan.html">Riwayat Pengaduan</a>
+        <a href="panduan-fasilitas.html">Panduan Fasilitas</a>
+      </nav>
+      
+      <div class="top-actions">
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i><span>Cari</span></button>
+        <button class="icon-button" aria-label="Notifikasi"><i class="fa-regular fa-bell"></i><i></i></button>
+        <div class="profile">
+          <b>Dimas Arya</b>
+          <span>Pratama</span>
+        </div>
+        <span class="avatar"><i class="fa-solid fa-user"></i></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="page">
+    <!-- HERO / WELCOME BANNER -->
+    <section class="panel welcome" style="margin-bottom: 20px;">
+      <div>
+        <div class="eyebrow">
+          <span>UPF</span>
+          <b>Pelaporan Fasilitas Aktif • Unit Pengelola Fasilitas</b>
+        </div>
+        <h1>Formulir Pengaduan Sarana &amp; Prasarana Kampus</h1>
+        <p style="color: #60697a; font-size: 11px; line-height: 1.6; margin-top: 6px;">
+          Laporkan kerusakan fasilitas di lingkungan kampus untuk penanganan cepat oleh Unit Pengelola Fasilitas (UPF).
+        </p>
+        <div class="student-meta" style="margin-top: 12px;">
+          <span>ID Pelapor: NIM 2108561042</span>
+          <span>Dimas Arya Pratama (Teknik)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPPER / TIMELINE -->
+    <div class="panel" style="padding: 16px; margin-bottom: 20px;">
+      <div class="timeline" style="margin-bottom: 0;">
+        <div class="step current">
+          <span>1</span>
+          <b>Tahap 1</b>
+          <small>Isi Data Laporan</small>
+        </div>
+        <div class="step future">
+          <span>2</span>
+          <b>Tahap 2</b>
+          <small>Tinjau &amp; Validasi</small>
+        </div>
+        <div class="step future">
+          <span>3</span>
+          <b>Tahap 3</b>
+          <small>Tiket Diterbitkan</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- TATA LETAK FORMULIR & SIDEBAR -->
+    <div class="dashboard-grid">
+      
+      <!-- KOLOM KIRI: FORMULIR -->
+      <div class="recent">
+        <form id="complaintForm" onsubmit="event.preventDefault(); alert('Pengaduan berhasil dikirim!');">
+          
+          <!-- BAGIAN 1: JUDUL & KATEGORI -->
+          <div class="panel" style="padding: 20px; margin-bottom: 16px;">
+            <div class="section-heading" style="padding: 0 0 12px 0;">
+              <h2>1. Judul &amp; Kategori Kerusakan</h2>
+            </div>
+            
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-weight: 600; font-size: 10px; margin-bottom: 6px;">Judul Laporan *</label>
+              <input type="text" placeholder="Contoh: Wastafel Toilet Lt. 2 Gedung C Mampet &amp; Kran Patah" style="width: 100%; padding: 9px 12px; border: 1px solid #edf0f7; border-radius: 8px; font-size: 10px;" required>
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 10px; margin-bottom: 8px;">Kategori Fasilitas *</label>
+              <div class="stats" style="grid-template-columns: repeat(2, 1fr); margin: 0; gap: 10px;">
+                <label class="stat panel" style="cursor: pointer;">
+                  <div>
+                    <input type="radio" name="category" value="hvac" checked>
+                    <strong style="font-size: 12px; margin-top: 4px;">AC &amp; Tata Udara</strong>
+                    <small>Bocor, mati total, tidak dingin</small>
+                  </div>
+                </label>
+                <label class="stat panel" style="cursor: pointer;">
+                  <div>
+                    <input type="radio" name="category" value="electric">
+                    <strong style="font-size: 12px; margin-top: 4px;">Kelistrikan &amp; Lampu</strong>
+                    <small>Stopkontak, lampu padam</small>
+                  </div>
+                </label>
+                <label class="stat panel" style="cursor: pointer;">
+                  <div>
+                    <input type="radio" name="category" value="sanitation">
+                    <strong style="font-size: 12px; margin-top: 4px;">Sanitasi &amp; Pipa Air</strong>
+                    <small>Wastafel, toilet mampet, kran</small>
+                  </div>
+                </label>
+                <label class="stat panel" style="cursor: pointer;">
+                  <div>
+                    <input type="radio" name="category" value="furniture">
+                    <strong style="font-size: 12px; margin-top: 4px;">Meja &amp; Perabot</strong>
+                    <small>Kursi patah, meja goyang</small>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- BAGIAN 2: LOKASI & DESKRIPSI -->
+          <div class="panel" style="padding: 20px; margin-bottom: 16px;">
+            <div class="section-heading" style="padding: 0 0 12px 0;">
+              <h2>2. Lokasi &amp; Detail Kerusakan</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <label style="display: block; font-weight: 600; font-size: 10px; margin-bottom: 6px;">Gedung / Zona *</label>
+                <select style="width: 100%; padding: 9px 12px; border: 1px solid #edf0f7; border-radius: 8px; font-size: 10px; background: #fff;">
+                  <option>Gedung C - Fakultas Teknik</option>
+                  <option>Gedung B - Fakultas Ilmu Komputer</option>
+                  <option>Gedung A - Rektorat</option>
+                  <option>Perpustakaan Pusat</option>
+                </select>
+              </div>
+              <div>
+                <label style="display: block; font-weight: 600; font-size: 10px; margin-bottom: 6px;">Lantai &amp; Ruangan *</label>
+                <input type="text" value="Lantai 2 - Toilet Mahasiswa Barat" style="width: 100%; padding: 9px 12px; border: 1px solid #edf0f7; border-radius: 8px; font-size: 10px;" required>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label style="display: block; font-weight: 600; font-size: 10px; margin-bottom: 6px;">Deskripsi Lengkap Kerusakan *</label>
+              <textarea rows="4" style="width: 100%; padding: 9px 12px; border: 1px solid #edf0f7; border-radius: 8px; font-size: 10px; font-family: inherit;" required>Wastafel sebelah kiri kran utamanya patah pada sambungan pipa bawah. Air terus mengalir deras dan lantai sangat licin membahayakan.</textarea>
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 10px; margin-bottom: 6px;">Unggah Foto Bukti (Maks. 3 Foto)</label>
+              <div style="border: 2px dashed #e8ecf5; background: #f7f8fd; border-radius: 8px; padding: 20px; text-align: center;">
+                <i class="fa-solid fa-cloud-arrow-up" style="font-size: 24px; color: var(--blue); margin-bottom: 8px;"></i>
+                <p style="margin: 0; font-size: 10px; color: #586174;">Tarik &amp; lepas berkas foto ke sini atau pilih berkas</p>
+                <input type="file" accept="image/*" style="margin-top: 10px; font-size: 9px;">
+              </div>
+            </div>
+          </div>
+
+          <!-- BAGIAN 3: URGENSI & TOMBOL SUBMIT -->
+          <div class="panel" style="padding: 20px; margin-bottom: 16px;">
+            <div class="section-heading" style="padding: 0 0 12px 0;">
+              <h2>3. Tingkat Urgensi Laporan</h2>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-bottom: 16px;">
+              <label style="flex: 1; padding: 10px; border: 1px solid #edf0f7; border-radius: 8px; cursor: pointer; background: #f0f3ff;">
+                <input type="radio" name="urgency" value="normal">
+                <b style="display: block; font-size: 10px; margin-top: 4px;">Normal</b>
+                <small style="font-size: 8px; color: #667084;">SLA 1x24 Jam</small>
+              </label>
+              <label style="flex: 1; padding: 10px; border: 1px solid #edf0f7; border-radius: 8px; cursor: pointer; background: #e0e8ff;">
+                <input type="radio" name="urgency" value="urgent" checked>
+                <b style="display: block; font-size: 10px; color: var(--blue); margin-top: 4px;">Mendesak</b>
+                <small style="font-size: 8px; color: #667084;">Respon 4 - 6 Jam</small>
+              </label>
+              <label style="flex: 1; padding: 10px; border: 1px solid #edf0f7; border-radius: 8px; cursor: pointer; background: #fff0f0;">
+                <input type="radio" name="urgency" value="critical">
+                <b style="display: block; font-size: 10px; color: #c42b32; margin-top: 4px;">Kritis / Bahaya</b>
+                <small style="font-size: 8px; color: #667084;">Respon &lt; 1 Jam</small>
+              </label>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 10px;">
+              <button type="button" class="button soft">Simpan Draf</button>
+              <button type="submit" class="button primary"><i class="fa-solid fa-paper-plane"></i> Kirim Pengaduan Sekarang</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- KOLOM KANAN: SIDEBAR INFO SLA & DARURAT -->
+      <aside class="sidebar">
+        <!-- INFO SLA -->
+        <div class="panel side-panel">
+          <div class="side-title">
+            <h2>Standar Waktu Layanan</h2>
+            <span class="tag">UPF SLA</span>
+          </div>
+          <p class="side-intro">Target respon penanganan oleh tim teknisi lapangan:</p>
+          
+          <div class="maintenance">
+            <div>
+              <b>Validasi &amp; Triage</b>
+              <span>15 - 30 Menit</span>
+            </div>
+            <p>Pemeriksaan awal oleh helpdesk.</p>
+          </div>
+          <div class="maintenance">
+            <div>
+              <b>Inspeksi Teknisi</b>
+              <span>Maks. 2 Jam</span>
+            </div>
+            <p>Teknisi tiba di titik lokasi.</p>
+          </div>
+          <div class="maintenance">
+            <div>
+              <b>Penyelesaian Tiket</b>
+              <span>1 x 24 Jam</span>
+            </div>
+            <p>Perbaikan selesai &amp; laporan ditutup.</p>
+          </div>
+        </div>
+
+        <!-- KONTAK DARURAT -->
+        <div class="panel side-panel">
+          <div class="side-title">
+            <h2>Satgas Darurat 24 Jam</h2>
+          </div>
+          <p class="side-intro">Untuk bahaya mendesak (kebakaran, lift macet, korsleting):</p>
+          
+          <div class="contact-card emergency">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <b>HOTLINE BEBAS PULSA</b>
+              <strong>0811-2345-6789</strong>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span><i class="fa-solid fa-headset"></i></span>
+            <div>
+              <b>TELEPON INTERNAL</b>
+              <strong>Ext. 999</strong>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-building-columns"></i></span>
+          <strong>KampusCare</strong>
+        </div>
+        <p>Kanal aspirasi &amp; pelaporan sarana prasarana resmi Universitas Terpadu.</p>
+        <span class="tag">Status Sistem: Normal (SLA 24 Jam)</span>
+      </div>
+      <div>
+        <h3>Helpdesk DSTI</h3>
+        <p>Direktorat Sistem &amp; Teknologi Informasi</p>
+        <p><i class="fa-regular fa-envelope"></i> helpdesk@terpadu.ac.id</p>
+        <p><i class="fa-solid fa-phone"></i> Ext. 1404 | (021) 7888-2300</p>
+      </div>
+      <div>
+        <h3>Unit Pengelola Fasilitas</h3>
+        <p>Gedung Rektorat Sayap Timur, Lantai 1</p>
+        <p>Hotline Darurat: 0811-2345-6789</p>
+      </div>
+      <div>
+        <h3>Tautan Cepat</h3>
+        <p>Standar Layanan Operasional (SLA)</p>
+        <p>Peta Zonasi Fasilitas Kampus</p>
+        <p>Portal Mahasiswa Terintegrasi</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2025 Universitas Terpadu. Hak Cipta Dilindungi Undang-Undang. KampusCare v2.4.</span>
+      <div style="display: flex; gap: 10px;">
+        <a href="#">Bantuan Penggunaan</a>
+        <a href="#">Syarat Layanan</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

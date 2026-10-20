@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwayat Pengaduan | KampusCare</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER / TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon"><i class="fa-solid fa-building-columns"></i></span>
+        <div>
+          <strong>KampusCare <small>RESMI</small></strong>
+          <em>Sistem Keluhan Universitas Terpadu</em>
+        </div>
+      </a>
+      
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="../../index.html">Beranda</a>
+        <a href="buat-pengaduan.html">Buat Pengaduan</a>
+        <a class="active" href="riwayat-pengaduan.html">Riwayat Pengaduan</a>
+        <a href="panduan-fasilitas.html">Panduan Fasilitas</a>
+      </nav>
+      
+      <div class="top-actions">
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i><span>Cari</span></button>
+        <button class="icon-button" aria-label="Notifikasi"><i class="fa-regular fa-bell"></i><i></i></button>
+        <div class="profile">
+          <b>Dimas Arya</b>
+          <span>Pratama</span>
+        </div>
+        <span class="avatar"><i class="fa-solid fa-user"></i></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="page">
+    <!-- HERO / BANNER DETAIL TIKET -->
+    <section class="panel welcome" style="margin-bottom: 20px;">
+      <div>
+        <div class="eyebrow">
+          <span># KC-2025-0418</span>
+          <b>Diverifikasi Sistem SmartSarpras v2.4</b>
+        </div>
+        <h1>AC Ruang Kuliah 302 Gedung B Bocor dan Menetes ke Kursi Mahasiswa</h1>
+        <p style="color: #60697a; font-size: 11px; line-height: 1.6; margin-top: 6px;">
+          Dilaporkan oleh Dimas Arya Pratama (NIM: 2108561042) • 18 Mei 2025, 09:15 WIB
+        </p>
+        <div class="student-meta" style="margin-top: 12px;">
+          <span class="pill progress" style="background:#fff3e0; color:#e65100;">● IN PROGRESS (SEDANG DIKERJAKAN)</span>
+          <span class="pill progress" style="background:#fff0f0; color:#c42b32;">! Prioritas: Mendesak</span>
+          <span>Kategori: Pendingin Ruangan (HVAC)</span>
+        </div>
+      </div>
+      <div class="welcome-actions">
+        <button class="button white" onclick="window.print()"><i class="fa-solid fa-print"></i> Cetak PDF</button>
+        <button class="button primary"><i class="fa-solid fa-message"></i> Update Tambahan</button>
+      </div>
+    </section>
+
+    <!-- LAYOUT DASHBOARD UTAMA -->
+    <div class="dashboard-grid">
+      
+      <!-- KOLOM KIRI (UTAMA) -->
+      <div class="recent">
+        
+        <!-- PELACAKAN STATUS / TIMELINE -->
+        <div class="panel active-ticket" style="margin-bottom: 20px;">
+          <div class="section-heading" style="padding: 0 0 16px 0;">
+            <div>
+              <h2>Pelacakan Status Real-Time</h2>
+              <p>Pembaruan otomatis tiap 60 detik</p>
+            </div>
+            <span class="tag">Live Audit</span>
+          </div>
+
+          <div class="timeline" style="grid-template-columns: repeat(5, minmax(0, 1fr));">
+            <div class="step">
+              <span><i class="fa-solid fa-check"></i></span>
+              <b>Masuk</b>
+              <small>09:15 WIB</small>
+            </div>
+            <div class="step">
+              <span><i class="fa-solid fa-check"></i></span>
+              <b>Verifikasi</b>
+              <small>10:30 WIB</small>
+            </div>
+            <div class="step">
+              <span><i class="fa-solid fa-check"></i></span>
+              <b>Disposisi</b>
+              <small>11:00 WIB</small>
+            </div>
+            <div class="step current">
+              <span>4</span>
+              <b>Perbaikan</b>
+              <small>13:45 WIB</small>
+            </div>
+            <div class="step future">
+              <span>5</span>
+              <b>Selesai</b>
+              <small>Menunggu</small>
+            </div>
+          </div>
+
+          <div class="section-banner" style="margin-top: 16px;">
+            <strong>INFORMASI TIM PENANGANAN:</strong>
+            <span>Teknisi saat ini berada di lokasi membawa kompresor jet cleaner dan suku cadang drainase.</span>
+          </div>
+        </div>
+
+        <!-- RINCIAN & INVESTIGASI LAPANGAN -->
+        <div class="panel" style="padding: 20px; margin-bottom: 20px;">
+          <div class="section-heading" style="padding: 0 0 14px 0;">
+            <h2>Rincian Laporan &amp; Investigasi Lapangan</h2>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+            <div class="ticket-info" style="margin: 0;">
+              <b style="color: #0752d5; margin-bottom: 6px;">Deskripsi Keluhan Mahasiswa</b>
+              <p style="font-size: 9px; color: #525b6e; line-height: 1.5; margin: 0;">
+                "Unit AC Daikin mengalami tetesan air deras sejak pukul 08:30 WIB. Tetesan mengenai 4 bangku di baris ke-3 sehingga tidak dapat diduduki. Lantai menjadi licin dan berisiko korsleting."
+              </p>
+            </div>
+            <div class="ticket-info" style="margin: 0;">
+              <b style="color: #0752d5; margin-bottom: 6px;">Catatan Investigasi Awal UPF</b>
+              <p style="font-size: 9px; color: #525b6e; line-height: 1.5; margin: 0;">
+                "Indikasi penyumbatan lumut pada saluran pembuangan kondensasi (drain pan overflow). Surat penugasan Fast Track Maintenance telah diterbitkan."
+              </p>
+            </div>
+          </div>
+
+          <!-- DETAIL LOKASI PRESISI -->
+          <div class="section-banner">
+            <div>
+              <strong>TITIK PRESISI LOKASI:</strong>
+              <span style="display: block; margin-top: 4px;">Kampus Bukit • Gedung B (Ilkom) • Lt. 3 Sayap Barat • Ruang RK 302</span>
+            </div>
+            <span><b>Kode Aset: AST-FAS-2023-B302</b></span>
+          </div>
+        </div>
+
+        <!-- DOKUMENTASI VISUAL LAPANGAN -->
+        <div class="panel" style="padding: 20px; margin-bottom: 20px;">
+          <div class="section-heading" style="padding: 0 0 14px 0;">
+            <h2>Dokumentasi Komparasi Visual Lapangan</h2>
+            <span class="tag">2 Foto Terverifikasi</span>
+          </div>
+
+          <div class="active-grid" style="margin-top: 0; grid-template-columns: 1fr 1fr;">
+            <div>
+              <div class="photo-wrap">
+                <img src="images/ruang-kuliah.jpg" alt="Kondisi Sebelum Perbaikan" onerror="this.src='https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80'">
+                <span>Sebelum: Pelapor (09:15)</span>
+              </div>
+              <div class="ticket-info">
+                <div class="ticket-id"><span>Diunggah oleh: Mahasiswa</span><b>IMG_B302_8915.JPG</b></div>
+                <p style="font-size: 9px; margin-top: 6px; color: #596276;">Tetesan air membasahi 4 kursi kuliah kayu.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="photo-wrap">
+                <img src="images/teknisi.jpg" alt="Progres Penanganan Teknisi" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80'">
+                <span style="background: #2457e8;">Progres Teknisi (14:10)</span>
+              </div>
+              <div class="ticket-info">
+                <div class="ticket-id"><span>Diunggah oleh: Pak Joko</span><b>WORK_TEK12_1410.JPG</b></div>
+                <p style="font-size: 9px; margin-top: 6px; color: #596276;">Pembongkaran casing &amp; flushing selang pipa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ULASAN KEPUASAN -->
+        <div class="panel response">
+          <div class="section-heading" style="padding: 0 0 12px 0;">
+            <h2>Validasi &amp; Ulasan Kepuasan Mahasiswa</h2>
+          </div>
+          <p style="margin-bottom: 14px;">Formulir di bawah ini dapat diisi setelah pekerjaan perbaikan selesai dilakukan di lokasi.</p>
+          
+          <form id="reviewForm" onsubmit="event.preventDefault(); alert('Ulasan berhasil dikirim!');">
+            <div style="margin-bottom: 12px;">
+              <label style="display:block; font-weight:600; font-size:10px; margin-bottom:6px;">Rating Respon &amp; Penanganan:</label>
+              <div class="chips">
+                <span>★ 5.0 Sangat Memuaskan</span>
+                <span>★ 4.0 Memuaskan</span>
+                <span>★ 3.0 Cukup</span>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 12px;">
+              <label style="display:block; font-weight:600; font-size:10px; margin-bottom:6px;">Komentar Mahasiswa:</label>
+              <textarea rows="3" placeholder="Tuliskan konfirmasi apakah perbaikan sudah sesuai..." style="width:100%; padding:8px 12px; border:1px solid #edf0f7; border-radius:8px; font-size:10px; font-family:inherit;"></textarea>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <label style="font-size:9px; color:#5e6779;">
+                <input type="checkbox" required> Saya telah memeriksa kondisi ruangan secara langsung.
+              </label>
+              <button type="submit" class="button primary">Tandai Selesai &amp; Kirim</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- KOLOM KANAN (SIDEBAR) -->
+      <aside class="sidebar">
+        
+        <!-- TEKNISI BERTUGAS -->
+        <div class="panel side-panel">
+          <div class="side-title">
+            <h2>Teknisi Bertugas</h2>
+            <span class="tag">● On Duty</span>
+          </div>
+
+          <div class="technician" style="margin-top: 0; padding: 10px;">
+            <div class="tool-icon"><i class="fa-solid fa-user-gear"></i></div>
+            <div class="tech-copy">
+              <b>Pak Joko Susilo <span class="tag">★ 4.9</span></b>
+              <small>ID: TK-012 • HVAC &amp; Sarpras UPF</small>
+            </div>
+          </div>
+
+          <div class="maintenance" style="margin-top: 10px;">
+            <p style="font-size: 8px;"><b>Spesialisasi Bersertifikat:</b> Sistem AC Split, VRV/VRF, &amp; Pendingin Sentral Gedung.</p>
+          </div>
+
+          <div class="tech-actions" style="margin-top: 12px;">
+            <a class="button primary" style="flex:1; text-align:center; text-decoration:none;" href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a class="button white" style="flex:1; text-align:center; text-decoration:none;" href="tel:+620000000000"><i class="fa-solid fa-phone"></i> Telepon</a>
+          </div>
+        </div>
+
+        <!-- TARGET SLA LAYANAN -->
+        <div class="panel response">
+          <div class="side-title">
+            <h2>Target SLA Layanan</h2>
+            <span class="tag">Tipe Cepat</span>
+          </div>
+
+          <div class="response-data" style="margin-top: 10px;">
+            <div>
+              <small style="font-size: 8px; color: #687184;">Sisa Waktu Penanganan</small>
+              <strong style="font-size: 18px;">1 Jam 45 Mnt</strong>
+            </div>
+            <div class="ring"><span>78%</span></div>
+          </div>
+
+          <div class="maintenance" style="margin-top: 14px;">
+            <div style="margin-bottom: 4px;"><b>Waktu Respon Tiket</b><span>1 Jam 15 Mnt</span></div>
+            <div style="margin-bottom: 4px;"><b>Durasi Lapangan</b><span>~40 Mnt</span></div>
+            <div><b>Status Kepatuhan SLA</b><span style="color:#0752d5;">On Track</span></div>
+          </div>
+        </div>
+
+        <!-- LOG AKTIVITAS SISTEM -->
+        <div class="panel side-panel">
+          <div class="side-title">
+            <h2>Log Aktivitas Sistem</h2>
+          </div>
+
+          <div class="maintenance">
+            <div><b>Progres Diperbarui</b><span>14:10 WIB</span></div>
+            <p>Teknisi melakukan flushing saluran drainase.</p>
+          </div>
+          <div class="maintenance">
+            <div><b>Check-in Lokasi</b><span>13:45 WIB</span></div>
+            <p>Pak Joko memindai QR Code RK 302 Gedung B.</p>
+          </div>
+          <div class="maintenance">
+            <div><b>Penugasan Teknisi</b><span>11:00 WIB</span></div>
+            <p>Tiket dialokasikan ke Regu HVAC Bukit.</p>
+          </div>
+          <div class="maintenance">
+            <div><b>Tiket Dibuat</b><span>09:15 WIB</span></div>
+            <p>Pelapor submit pengaduan via sistem.</p>
+          </div>
+        </div>
+
+        <!-- ESKALASI DARURAT -->
+        <div class="panel side-panel">
+          <div class="side-title">
+            <h2>Bantuan &amp; Eskalasi</h2>
+          </div>
+          <p class="side-intro">Jika pengerjaan mengalami keterlambatan melebihi SLA, ajukan eskalasi ke supervisor.</p>
+
+          <div class="contact-card emergency" style="cursor: pointer;" onclick="alert('Eskalasi ke supervisor diproses.')">
+            <span><i class="fa-solid fa-triangle-exclamation"></i></span>
+            <div>
+              <b>Eskalasi Supervisor</b>
+              <small>Klik untuk minta perhatian khusus</small>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-building-columns"></i></span>
+          <strong>KampusCare</strong>
+        </div>
+        <p>Kanal aspirasi &amp; pelaporan sarana prasarana resmi Universitas Terpadu.</p>
+        <span class="tag">Status Sistem: Normal (SLA 24 Jam)</span>
+      </div>
+      <div>
+        <h3>Helpdesk DSTI</h3>
+        <p>Direktorat Sistem &amp; Teknologi Informasi</p>
+        <p><i class="fa-regular fa-envelope"></i> helpdesk@terpadu.ac.id</p>
+        <p><i class="fa-solid fa-phone"></i> Ext. 1404 | (021) 7888-2300</p>
+      </div>
+      <div>
+        <h3>Unit Pengelola Fasilitas</h3>
+        <p>Gedung Rektorat Sayap Timur, Lantai 1</p>
+        <p>Hotline Darurat: 0811-2345-6789</p>
+      </div>
+      <div>
+        <h3>Tautan Cepat</h3>
+        <p>Standar Layanan Operasional (SLA)</p>
+        <p>Peta Zonasi Fasilitas Kampus</p>
+        <p>Portal Mahasiswa Terintegrasi</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2025 Universitas Terpadu. Hak Cipta Dilindungi Undang-Undang. KampusCare v2.4.</span>
+      <div style="display: flex; gap: 10px;">
+        <a href="#">Bantuan Penggunaan</a>
+        <a href="#">Syarat Layanan</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
